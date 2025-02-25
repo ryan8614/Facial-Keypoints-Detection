@@ -6,27 +6,6 @@ This project focuses on detecting facial keypoints (landmarks) in images using d
 
 The goal of this project is to build a model that can predict the location of 68 facial keypoints on a given image. The dataset used contains images of faces along with their corresponding keypoint annotations.
 
-## Repository Structure
-
-The repository is organized as follows:
-
-Facial-Keypoints-Detection/
-├── data/                           # Directory containing the dataset
-│   ├── training.csv                # Training data with image filenames and keypoint coordinates
-│   ├── test.csv                    # Test data with image filenames
-│   └── IdLookupTable.csv           # Mapping between test images and required keypoints for submission
-├── models/                         # Directory to save trained models
-│   └── best_model.h5               # Best performing model saved in HDF5 format
-├── notebooks/                      # Jupyter notebooks for exploration and model development
-│   └── Facial_Keypoint_Detection.ipynb  # Main notebook with code and explanations
-├── src/                            # Source code directory
-│   ├── data_loader.py              # Functions for loading and preprocessing data
-│   ├── model.py                    # Definition of the neural network architecture
-│   ├── train.py                    # Training loop and model evaluation
-│   └── test.py                     # Script for making predictions on test data
-├── requirements.txt                # List of required Python packages
-└── README.md                       # Project overview and instructions
-
 ## Getting Started
 
 ### Prerequisites
