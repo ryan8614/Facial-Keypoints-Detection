@@ -1,58 +1,41 @@
-# Facial Keypoints Detection
+# Facial Keypoint Detection
 
-This project focuses on detecting facial keypoints (landmarks) in images using deep learning techniques. Accurate detection of these keypoints is essential for various applications, including facial recognition, emotion detection, and augmented reality.
+## Overview
+This project focuses on **Facial Keypoint Detection**, a computer vision task used in applications such as facial recognition, emotion detection, and augmented reality. The project involves data preprocessing, data grouping, and deep learning model design to detect key facial landmarks.
 
-## Project Overview
+## Features
+- **Data Preprocessing**: Cleans and prepares facial images for training.
+- **Data Grouping**: Organizes data for better generalization and model performance.
+- **Model Design**: Implements a deep learning model to predict facial keypoints.
+- **TensorFlow/PyTorch-based Training**: Uses modern deep learning frameworks for training and evaluation.
 
-The goal of this project is to build a model that can predict the location of 68 facial keypoints on a given image. The dataset used contains images of faces along with their corresponding keypoint annotations.
+## Dataset
+The project uses a facial keypoint dataset, typically containing images of faces with annotated keypoints. Ensure the dataset is available in the correct format before training.
 
-## Getting Started
-
-### Prerequisites
-
-Ensure you have the following installed:
-
-- Python 3.6 or higher
-- pip (Python package installer)
-
-### Installation
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/ryan8614/Facial-Keypoints-Detection.git
-   cd Facial-Keypoints-Detection
-
-	2.	Install required packages:
-
+## Installation
+To set up the environment, install the required dependencies:
+```bash
 pip install -r requirements.txt
+```
 
+## Usage
+Run the Jupyter Notebook to preprocess the data, train the model, and evaluate its performance:
+```bash
+jupyter notebook "Ficial Keypoint Detection.ipynb"
+```
 
-	3.	Download the dataset:
-The dataset can be obtained from the Kaggle Facial Keypoints Detection competition. Place the downloaded files (training.csv, test.csv, IdLookupTable.csv) into the data/ directory.
+## Results
+The trained model predicts key facial landmarks, which can be visualized on images for verification.
 
-Usage
+## Applications
+- **Facial recognition systems**
+- **Emotion detection**
+- **Augmented reality**
+- **Medical applications (e.g., facial analysis for health monitoring)**
 
-Training the Model
+## References
+- Deep Learning-based Facial Landmark Detection Papers
+- Open-source Datasets for Facial Keypoint Detection
 
-To train the model, run:
-
-python src/train.py
-
-This script will load the training data, preprocess it, define the neural network architecture, and train the model. The best model will be saved in the models/ directory as best_model.h5.
-
-Making Predictions
-
-To make predictions on the test set, run:
-
-python src/test.py
-
-This script will load the test data and the trained model, then output the predicted keypoints for each image in the test set.
-
-Acknowledgements
-
-This project is inspired by the Kaggle competition on Facial Keypoints Detection. Special thanks to the contributors of the original dataset and the community for their valuable resources and discussions.
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details. 
+## License
+This project is for educational and research purposes.
